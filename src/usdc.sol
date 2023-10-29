@@ -8,7 +8,7 @@
 
 pragma solidity ^0.6.0;
 
-/**
+/**`
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
  *
@@ -860,6 +860,7 @@ contract FiatTokenV1 is AbstractFiatTokenV1, Ownable, Pausable, Blacklistable {
         uint256 value
     )
         external
+        virtual
         override
         whenNotPaused
         notBlacklisted(msg.sender)
