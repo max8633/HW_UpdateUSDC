@@ -1,4 +1,4 @@
-#USDC
+# USDC
 
 ## Foundry
 
