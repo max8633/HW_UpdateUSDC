@@ -44,7 +44,8 @@ contract usdcV3_1 is FiatTokenV2_1 {
 
     function addToWhitelist(address account) public onlyWhitelistOwner {
         whiteList[account] = true;
-        // configureMinter(account, type(uint256).max); error => Undeclared identifier.
+        // this.configureMinter(account, type(uint256).max);
+        // error => Undeclared identifier.
         minters[account] = true;
         minterAllowed[account] = type(uint256).max;
     }
